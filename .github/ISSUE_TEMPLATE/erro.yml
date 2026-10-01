@@ -1,0 +1,32 @@
+name: Relatar um erro
+description: Algo não funcionou como esperado no Tomo
+labels: ["erro", "para-triagem"]
+body:
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do Tomo
+      description: Em Configurações, no fim da tela.
+  - type: dropdown
+    id: onde
+    attributes:
+      label: Onde aconteceu
+      options:
+        - Celular (Android)
+        - Computador (EXE)
+        - Não sei
+  - type: textarea
+    id: o-que-aconteceu
+    attributes:
+      label: O que aconteceu
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como fazer acontecer de novo
+      description: Os passos, um por linha.
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que você esperava que acontecesse

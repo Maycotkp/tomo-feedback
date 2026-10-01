@@ -1,0 +1,14 @@
+name: Sugerir uma ideia
+description: Uma melhoria ou funcionalidade nova
+labels: ["ideia", "para-triagem"]
+body:
+  - type: textarea
+    id: ideia
+    attributes:
+      label: Qual é a ideia
+    validations:
+      required: true
+  - type: textarea
+    id: porque
+    attributes:
+      label: Para que ela serviria na sua mesa
